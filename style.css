@@ -1,0 +1,192 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#050510;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+overflow-x:hidden;
+}
+
+section{
+min-height:100vh;
+padding:70px 20px;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:3rem;
+
+color:#ff8cff;
+
+text-shadow:
+0 0 10px #ff8cff,
+0 0 20px #ff8cff,
+0 0 40px #ff8cff;
+}
+
+.inicio{
+margin-top:20px;
+font-size:1.3rem;
+}
+
+.contador{
+margin-top:20px;
+font-size:1.2rem;
+color:#7df9ff;
+}
+
+.foto-principal{
+width:90%;
+max-width:450px;
+margin-top:30px;
+border-radius:20px;
+
+box-shadow:
+0 0 20px #00ffff,
+0 0 50px #ff00ff;
+}
+
+#playMusic{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+
+font-size:1rem;
+
+background:#ff5ce1;
+color:white;
+
+box-shadow:
+0 0 15px #ff5ce1,
+0 0 35px #ff5ce1;
+}
+
+.texto{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:2;
+font-size:1.1rem;
+}
+
+.texto h2{
+margin-bottom:30px;
+}
+
+.carta{
+display:flex;
+justify-content:center;
+}
+
+.carta-container{
+max-width:700px;
+width:100%;
+}
+
+.carta-fechada{
+padding:30px;
+cursor:pointer;
+text-align:center;
+font-size:1.4rem;
+
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+
+border-radius:20px;
+}
+
+.carta-aberta{
+display:none;
+
+margin-top:20px;
+padding:30px;
+
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+
+border-radius:20px;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.galeria img{
+width:100%;
+border-radius:20px;
+
+transition:.5s;
+
+box-shadow:
+0 0 15px #ff00ff,
+0 0 30px #00ffff;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+.final{
+text-align:center;
+}
+
+.final img{
+width:90%;
+max-width:450px;
+
+border-radius:20px;
+
+margin-bottom:30px;
+
+box-shadow:
+0 0 20px #00ffff,
+0 0 50px #ff00ff;
+}
+
+.final h2{
+margin-bottom:20px;
+color:#ff8cff;
+}
+
+.final p{
+max-width:900px;
+margin:auto;
+line-height:2;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+.flor{
+position:fixed;
+top:-50px;
+font-size:24px;
+pointer-events:none;
+animation:cair linear forwards;
+}
+
+@keyframes cair{
+
+to{
+transform:translateY(110vh) rotate(360deg);
+}
+}
