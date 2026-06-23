@@ -53,7 +53,7 @@ const flor = document.createElement("div");
 
 flor.classList.add("flor");
 
-const emojis = ["🌸","🌺","✨","💖"];
+const emojis = ["💖"];
 
 flor.innerHTML =
 emojis[Math.floor(Math.random()*emojis.length)];
@@ -68,9 +68,9 @@ document.body.appendChild(flor);
 
 setTimeout(()=>{
 flor.remove();
-},12000);
+},10000);
 }
 
-setInterval(criarFlor,700);
+setInterval(criarFlor,7000);
 
 window.dispatchEvent(new Event("scroll"));
